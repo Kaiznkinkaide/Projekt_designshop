@@ -1,0 +1,386 @@
+@font-face {
+    font-family: "Karla";
+    src: url("../fonts/Karla/Karla-Italic-VariableFont_wght.ttf");
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    padding:0 50px;
+}
+header{
+    display: grid;
+    grid-template-columns: 7fr 2fr 1fr 1fr;
+    grid-template-areas: 
+    "h1 week contact tde";
+    position: fixed;
+    width: 100vw;
+    padding: 5vh;
+    overflow: hidden;
+    background-color: white;
+    z-index: 1;
+}
+
+header h1{
+    grid-area: h1;
+    color: #323A45;
+    font-family: "Karla";
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+header p{
+    color: #323A45;
+    font-family: "Karla";
+    font-size: 0.625rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+header p:nth-of-type(1){
+    grid-area: week;
+}
+
+header p:nth-of-type(2){
+    grid-area: contact;
+}
+
+header p:nth-of-type(3){
+    grid-area: tde;
+}
+
+img{
+    height: max-content;
+    width: 100%;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+.big img{
+    width: 100%;
+    height: max-content;
+}
+
+main{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(14, max-content);
+    grid-template-areas: 
+    "kranken kranken kranken"
+    "swing hajo zed"
+    "elec woodie logo"
+    "dieter dieter dieter"
+    "eye gather dipped"
+    "sayl three from"
+    "arigato arigato arigato"
+    "winston letter coffee"
+    "beoplay make black1"
+    "min min min"
+    "grid1 card classic"
+    "mouse travel key"
+    "bottle bottle bottle"
+    "geo womb water";
+}
+
+.produkt{
+    color: #000;
+    font-family: "Karla";
+    font-size: 0.938rem;
+    font-weight: 400;
+    line-height: 146.667%;
+}
+
+.marke{
+    color: #848484;
+    font-family: "Karla";
+    font-size: 0.938rem;
+    font-weight: 400;
+    line-height: 146.667%; 
+}
+
+.price{
+    color: #000;
+    font-family: "Karla";
+    font-size: 0.938rem;
+    font-weight: 400;
+    line-height: 146.667%; 
+}
+
+.kranken{
+    grid-area: kranken;
+}
+
+.swing{
+    grid-area: swing;
+}
+.hajo{
+    grid-area: hajo;
+}
+.zed{
+    grid-area: zed;
+}
+.elec{
+    grid-area: elec;
+}
+.woodie{
+    grid-area: woodie;
+}
+.logo{
+    grid-area: logo;
+}
+.dieter{
+    grid-area: dieter;
+}
+.eye{
+    grid-area: eye;
+}
+.gather{
+    grid-area: gather;
+}
+.dipped{
+    grid-area: dipped;
+}
+.sayl{
+    grid-area: sayl;
+}
+.three{
+    grid-area: three;
+}
+.from{
+    grid-area: from;
+}
+.arigato{
+    grid-area: arigato;
+}
+.winston{
+    grid-area: winston;
+}
+.letter{
+    grid-area: letter;
+}
+.coffee{
+    grid-area: coffee;
+}
+.beoplay{
+    grid-area: beoplay;
+}
+.make{
+    grid-area: make;
+}
+.black{
+    grid-area: black1;               
+}
+.min{
+    grid-area: min;
+}
+.grid{
+    grid-area: grid1;
+}
+.card{
+    grid-area: card;
+}
+.classic{
+    grid-area: classic;
+}
+.mouse{
+    grid-area: mouse;
+}
+.travel{
+    grid-area: travel;
+}
+.key{
+    grid-area: key;
+}
+.bottle{
+    grid-area: bottle;
+}
+.geo{
+    grid-area: geo;
+}
+.womb{
+    grid-area: womb;
+}
+.water{
+    grid-area: water;
+}
+
+.design , .contact , .news ,.find{
+    color: #000;
+    font-family: "Karla";
+    font-size: 0.813rem;
+    font-weight: 700;
+}
+
+
+.artikel{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 10fr 1fr;
+    grid-template-areas: 
+    "bild bild"
+    "pair prce";
+}
+
+.artikel a{
+    grid-area: bild;
+}
+
+.pair{
+    grid-area: pair;
+}
+
+.price{
+    grid-area: prce;
+    text-align: right;
+}
+
+.designedby {
+    color: #000;
+    font-family: "Karla";
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 166.667%;
+}
+
+.designedby span{
+    color: #000;
+    font-family: "Karla";
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 166.667%;
+}
+
+.email{
+    color: #323A45;
+    font-family: "Karla";
+    font-size: 0.625rem;
+    font-weight: 400;
+}
+
+.subscribe p{
+    color: #000;
+    font-family: "Karla";
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 166.667%; 
+}
+
+.subscribe p:last-of-type{
+    font-style: italic;
+}
+
+.subscribe a{
+    color: #323A45;
+    font-family: "Karla";
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 166.667%;
+    text-decoration: none;
+}
+
+.subscribe spann{
+    color: #000;
+    font-family: "Karla";
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 166.667%;
+}
+
+.social{
+    color: #323A45;
+    font-family: "Karla";
+    font-size: 0.625rem;
+    font-weight: 400;
+}
+
+.copyright{
+    color: #848484;
+    font-family: "Karla";
+    font-size: 0.625rem;
+    font-weight: 400;
+    line-height: 200%; 
+    }
+
+footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "design contact news find"
+    "designedby email subscribe social"
+    "copyright . . .";
+    gap: 5vh;
+    margin-top: 7.5vh;
+}
+
+.design{
+    grid-area: design;
+}
+
+.contact{
+    grid-area: contact;
+}
+.news{
+    grid-area: news;
+}
+
+.find{
+    grid-area: find;
+}
+
+.designedby{
+    grid-area: designedby;
+}
+
+.email{
+    grid-area: email;
+}
+
+.subscribe{
+    grid-area: subscribe;
+}
+
+.social{
+    grid-area: social;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "facebook"
+    "instagram"
+    "twitter";
+}
+
+.social a:nth-of-type(1){
+    grid-area: facebook;
+    text-decoration: none;
+    color: #323A45;
+    font-family: "Karla";
+    font-size: 0.625rem;
+}
+.social a:nth-of-type(2){
+    grid-area: instagram;
+    text-decoration: none;
+    color: #323A45;
+    font-family: "Karla";
+    font-size: 0.625rem;
+}
+.social a:nth-of-type(3){
+    grid-area: twitter;
+    text-decoration: none;
+    color: #323A45;
+    font-family: "Karla";
+    font-size: 0.625rem;
+}
+
+.copyright{
+    grid-area: copyright;
+}
